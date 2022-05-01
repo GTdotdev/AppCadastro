@@ -1,0 +1,24 @@
+﻿<Window x:Name="Tela_Login" x:Class="AppCadastro.Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AppCadastro"
+        mc:Ignorable="d"
+        Title="Login" Height="218" Width="342" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="None" Icon="/sistemaicon.png">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="#FF9CB2E6" Offset="0.0"/>
+            <GradientStop Color="#FF648CED" Offset="0.5"/>
+            <GradientStop Color="#FF2454C8" Offset="1"/>
+        </LinearGradientBrush>
+    </Window.Background>
+    <Grid Margin="10">
+        <Label Content="Usuário" HorizontalAlignment="Left" Margin="15,15,0,0" VerticalAlignment="Top" Height="40" Width="90" FontSize="22" FontWeight="Bold"/>
+        <Label Content="Senha" HorizontalAlignment="Left" Margin="15,62,0,0" VerticalAlignment="Top" Width="90" Height="40" FontSize="22" FontWeight="Bold"/>
+        <TextBox x:Name="textBoxUser" CharacterCasing="Upper" HorizontalAlignment="Left" Margin="120,15,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="180" Height="40" FontSize="22" FontWeight="Bold"/>
+        <PasswordBox x:Name="textBoxPassword" HorizontalAlignment="Left" Margin="120,60,0,0" VerticalAlignment="Top" Width="180" Height="40" FontSize="22" FontWeight="Bold" />
+        <Button x:Name="LoginButton" Content="Login" Click="LoginButton_Click" HorizontalAlignment="Left" Margin="20,118,0,0" VerticalAlignment="Top" Width="80" Height="40" FontSize="22" RenderTransformOrigin="0.485,0.204"/>
+        <Button x:Name="SairButton" Content="Sair" Click="SairButton_Click" HorizontalAlignment="Left" Margin="220,118,0,0" VerticalAlignment="Top" Width="80" Height="40" FontSize="22"/>
+    </Grid>
+</Window>
